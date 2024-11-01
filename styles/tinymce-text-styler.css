@@ -1,0 +1,248 @@
+body { font-family: sans-serif; background-color: #F1F1F1; color: #222; }
+input[type="text"], textarea, select {
+    display: inline-block;
+    padding: 7px;
+    vertical-align: middle;
+    width: 300px;
+    font-family: arial;
+    box-sizing: border-box;
+}
+.important-note {
+    font-size: 13px;
+}
+input[type="submit"], input[type="button"] { 
+    padding: 2px; 
+    font-size: 14px; 
+}
+#text_styler_dialog_wrapper label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    width: 110px;
+}
+.window-buttons {
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+.note {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-left: 115px;
+}           
+.step2 {
+    display: none;
+}
+.el-option {
+    border: 1px dashed #ccc;
+    margin: 3px 0;
+    padding: 5px;
+    text-align: left;
+/*                display: none;*/
+}
+.new-element-text {
+    display: none;
+}
+#css-list {
+    display: none;
+}
+.tinymce-tabs .tab-content {
+
+}
+.tinymce-tabs .tab-content .tab {
+    display: none;
+}
+.tinymce-tabs  ul.tab-links {
+    padding: 0;
+    margin: 0;
+    border-bottom: solid #000 2px;
+    background: #fff;
+}
+.tinymce-tabs .tab-links li {
+    background: #ccc;
+    padding: 0;
+    display: inline-block;
+}
+.tinymce-tabs .tab-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px 10px;
+    display: inline-block;
+}
+.tinymce-tabs .tab-links li a:focus {
+    box-shadow: none;
+    outline: none;
+} 
+.tinymce-tabs li.active {
+    background: #000;
+}
+.tinymce-tabs li.active a {
+    color: #fff;
+}
+
+.form-txst .msg {
+    font-size: 15px;
+    font-style: italic;
+    margin: 15px 0 0;
+}
+.form-txst .std-form-line {
+    padding: 7px 0;
+}
+.form-txst .std-form-line label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 120px;
+}
+.form-txst .grp {
+    overflow: hidden;
+    clear: both;
+    display: inline-block;
+    vertical-align: middle;            
+}
+.form-txst .std-form-line .std-input {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.form-txst .std-form-line .error {
+
+}
+.form-txst .std-form-line .error.active {
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    display: inline-block;
+    height: 20px;
+    margin-left: 3px;
+    vertical-align: middle;
+    width: 20px;         
+}  
+.form-txst .std-form-line .error.check {
+
+}  
+input.media-uploader {
+    position: absolute;
+}  
+.frm-buttons {
+    bottom: 0;
+    left: 0;
+    margin-top: 10px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    text-align: center;  
+}
+/*
+.frm-buttons input,
+.frm-buttons input.button-primary {
+    background: #000 none repeat scroll 0 0;
+    border: 1px solid #000;
+    border-radius: 2px;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 7px 10px;
+}*/
+.frm-buttons input:hover{
+    opacity: .7;
+}
+
+#editor-ts-popup-wrap .help {
+    background: rgba(0, 128, 0, 0.2) none repeat scroll 0 0;
+    border: 2px solid green;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 8px 5px;
+    text-align: center; 
+}
+#editor-ts-popup-wrap .help a {
+    color: #000;
+}
+
+#my-modal {
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    top: 300px;
+    left: 300px;
+    background: #ccc;
+    border: solid #444 1px;
+    display: none;
+}
+
+#editor-ts-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 360px;
+    background: #000;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    z-index: 100100;
+    display: none;
+}
+#editor-ts-popup-wrap {
+    height: 500px;
+    margin-top: -250px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,.3);
+    width: 600px;
+    overflow: hidden;
+    margin-left: -250px;
+    margin-top: -125px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    z-index: 100105;
+    transition: height .2s,margin-top .2s;    
+}
+#link-selector {
+    padding: 10px 20px;
+}
+
+#editor-ts-popup-wrap .step1,
+#editor-ts-popup-wrap .step2 {
+    height: 335px;
+    /*overflow-y: auto;*/
+}
+#editor-ts-popup-wrap .step1 {
+    overflow-y: auto;
+}
+#editor-ts-popup-wrap .step2 {
+    background: #eee;
+}
+.tinymce-tabs .tab-content {
+    height: 300px;
+    overflow-y: auto;    
+}
+#editor-ts-close {
+padding: 0;
+position: absolute;
+top: 0;
+right: 0;
+width: 36px;
+height: 36px;
+text-align: center;
+background: 0 0;
+border: none;
+cursor: pointer;    
+}
+#editor-ts-close::before {
+    font: normal 20px/36px dashicons;
+    vertical-align: top;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 36px;
+    height: 36px;
+    content: "\f158";
+}

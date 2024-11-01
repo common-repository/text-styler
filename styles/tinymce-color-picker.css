@@ -1,0 +1,195 @@
+#text-styler .wp-picker-holder {
+    top: 200px;
+}
+.iris-picker {
+    display: block;
+    position: relative;
+}
+.iris-picker, .iris-picker * {
+    box-sizing: content-box;
+}
+input + .iris-picker {
+    margin-top: 4px;
+}
+.iris-error {
+    background-color: #ffafaf;
+}
+.iris-border {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    width: 200px;
+}
+.iris-picker-inner {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.iris-border .iris-picker-inner {
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+}
+.iris-picker .iris-square-inner {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.iris-picker .iris-square, .iris-picker .iris-slider, .iris-picker .iris-square-inner, .iris-picker .iris-palette {
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) inset;
+    float: left;
+    height: 100%;
+    margin-right: 5%;
+    width: 12.5%;
+}
+.iris-picker .iris-square {
+    margin-right: 10%;
+    position: relative;
+    width: 76%;
+}
+.iris-picker .iris-square-inner {
+    margin: 0;
+    width: auto;
+}
+.iris-ie-9 .iris-square, .iris-ie-9 .iris-slider, .iris-ie-9 .iris-square-inner, .iris-ie-9 .iris-palette {
+    border-radius: 0;
+    box-shadow: none;
+}
+.iris-ie-9 .iris-square, .iris-ie-9 .iris-slider, .iris-ie-9 .iris-palette {
+    outline: 1px solid rgba(0, 0, 0, 0.1);
+}
+.iris-ie-lt9 .iris-square, .iris-ie-lt9 .iris-slider, .iris-ie-lt9 .iris-square-inner, .iris-ie-lt9 .iris-palette {
+    outline: 1px solid #aaa;
+}
+.iris-ie-lt9 .iris-square .ui-slider-handle {
+    background-color: #fff;
+    outline: 1px solid #aaa;
+}
+.iris-ie-lt9 .iris-square .iris-square-handle {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    border: 3px solid #fff;
+}
+.iris-picker .iris-strip {
+    margin-right: 0;
+    position: relative;
+}
+.iris-picker .iris-strip .ui-slider-handle {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 center;
+    border-color: #aaa;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 4px 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: ns-resize;
+    height: 6px;
+    left: -3px;
+    margin: 0;
+    opacity: 0.9;
+    position: absolute;
+    right: -3px;
+    width: auto;
+    z-index: 5;
+}
+.iris-strip .ui-slider-handle::before {
+    border: 2px solid #fff;
+    border-radius: 3px;
+    bottom: -3px;
+    content: " ";
+    left: -2px;
+    position: absolute;
+    right: -2px;
+    top: -3px;
+}
+.iris-picker .iris-slider-offset {
+    background: transparent none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    bottom: -3px;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    width: auto;
+}
+.iris-picker .iris-square-handle {
+    background: transparent none repeat scroll 0 0;
+    border: 5px solid rgba(128, 128, 128, 0.5);
+    border-radius: 50%;
+    box-shadow: none;
+    cursor: move;
+    height: 12px;
+    left: -10px;
+    opacity: 1;
+    position: absolute;
+    top: -10px;
+    width: 12px;
+    z-index: 10;
+}
+.iris-picker .ui-state-focus .iris-square-handle {
+    opacity: 0.8;
+}
+.iris-picker .iris-square-handle:hover {
+    border-color: #999;
+}
+.iris-picker .iris-square-value:focus .iris-square-handle {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+    opacity: 0.8;
+}
+.iris-picker .iris-square-handle:hover::after {
+    border-color: #fff;
+}
+.iris-picker .iris-square-handle::after {
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    bottom: -4px;
+    content: " ";
+    left: -4px;
+    position: absolute;
+    right: -4px;
+    top: -4px;
+}
+.iris-picker .iris-square-value {
+    height: 8px;
+    position: absolute;
+    width: 8px;
+}
+.iris-ie-lt9 .iris-square-value, .iris-mozilla .iris-square-value {
+    height: 1px;
+    width: 1px;
+}
+.iris-palette-container {
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.iris-border .iris-palette-container {
+    bottom: 10px;
+    left: 10px;
+}
+.iris-picker .iris-palette {
+    cursor: pointer;
+    margin: 0;
+}
+.iris-square-handle, .ui-slider-handle {
+    border: 0 none;
+    outline: 0 none;
+}
+.wp-picker-holder {
+    position: absolute;
+    z-index: 999;
+}
+
